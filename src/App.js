@@ -402,9 +402,8 @@ const DuckFaceDetector = () => {
       
       setSwipedProfiles([...swipedProfiles, result]);
       
-      if (currentIndex < profiles.length - 1) {
-        setCurrentIndex(currentIndex + 1);
-      }
+      // Passer au profil suivant, même si c'est le dernier
+      setCurrentIndex(currentIndex + 1);
     }
   };
 
@@ -421,47 +420,26 @@ const DuckFaceDetector = () => {
 
   if (currentIndex >= profiles.length) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-blue-50 to-blue-100 flex items-center justify-center">
-        <div className="bg-white rounded-2xl p-8 shadow-xl max-w-md w-full mx-4 transform animate-pulse">
+      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+        <div className="bg-white rounded-2xl p-8 shadow-lg max-w-md w-full mx-4">
           <div className="text-center">
-            <div className="text-6xl mb-4 animate-bounce">🎉</div>
-            <h2 className="text-3xl font-bold text-gray-800 mb-2">Félicitations !</h2>
-            <h3 className="text-xl text-blue-600 mb-4">Jeu terminé sur Duckfacebook</h3>
-            <div className="text-5xl font-bold text-blue-600 mb-2">{getScore()}%</div>
-            <p className="text-lg text-gray-600 mb-2">
-              <strong>{swipedProfiles.filter(p => p.correct).length}</strong> bonnes réponses
+            <div className="text-6xl mb-4">🎉</div>
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">Jeu terminé !</h2>
+            <div className="text-4xl font-bold text-blue-600 mb-2">{getScore()}%</div>
+            <p className="text-gray-600 mb-6">
+              Vous avez correctement identifié {swipedProfiles.filter(p => p.correct).length} duckfaces sur {swipedProfiles.length}
             </p>
-            <p className="text-sm text-gray-500 mb-6">
-              sur {swipedProfiles.length} profils swipés
-            </p>
-            
-            {/* Message selon le score */}
-            <div className="mb-6">
-              {getScore() === 100 && (
-                <p className="text-green-600 font-semibold">🏆 Score parfait ! Vous êtes un expert duckface !</p>
-              )}
-              {getScore() >= 80 && getScore() < 100 && (
-                <p className="text-blue-600 font-semibold">🌟 Excellent ! Vous maîtrisez l'art du duckface</p>
-              )}
-              {getScore() >= 60 && getScore() < 80 && (
-                <p className="text-yellow-600 font-semibold">👍 Pas mal ! Encore un peu d'entraînement</p>
-              )}
-              {getScore() < 60 && (
-                <p className="text-gray-600 font-semibold">🤔 Il faut s'entraîner pour reconnaître les duckfaces !</p>
-              )}
-            </div>
-
             <div className="flex gap-3">
               <button 
                 onClick={resetGame}
-                className="flex-1 bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-all transform hover:scale-105 flex items-center justify-center gap-2"
+                className="flex-1 bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors flex items-center justify-center gap-2"
               >
                 <RotateCcw size={20} />
                 Rejouer
               </button>
               <button 
                 onClick={() => setShowStats(true)}
-                className="flex-1 bg-gray-200 text-gray-800 px-6 py-3 rounded-lg font-semibold hover:bg-gray-300 transition-all transform hover:scale-105 flex items-center justify-center gap-2"
+                className="flex-1 bg-gray-200 text-gray-800 px-6 py-3 rounded-lg font-semibold hover:bg-gray-300 transition-colors flex items-center justify-center gap-2"
               >
                 <BarChart3 size={20} />
                 Détails
