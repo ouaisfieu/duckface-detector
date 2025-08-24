@@ -11,15 +11,6 @@ const DuckFaceDetector = () => {
   const profiles = [
     {
       id: 1,
-      name: "Georges-Louis",
-      profession: "Présidents",
-      photo: "https://dl.ouaisfi.eu/images/fbem/duckFaceEM.jpg",
-      originalUrl: "",
-      isDuckface: true,
-      bio: "Incontournable"
-    },
-    {
-      id: 2,
       name: "Emma",
       profession: "Photographe",
       photo: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=400&fit=crop&crop=face",
@@ -28,16 +19,7 @@ const DuckFaceDetector = () => {
       bio: "Aime les selfies et les couchers de soleil 📸"
     },
     {
-      id: 3,
-      name: "Georges-Louis",
-      profession: "Déterminé",
-      photo: "https://dl.ouaisfi.eu/images/fbem/déterminé.jpg",
-      originalUrl: "",
-      isDuckface: true,
-      bio: "Présidents"
-    },
-    {
-      id: 4,
+      id: 2,
       name: "Lucas",
       profession: "Développeur",
       photo: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
@@ -46,16 +28,16 @@ const DuckFaceDetector = () => {
       bio: "Développeur le jour, gamer la nuit 🎮"
     },
     {
-      id: 5,
-      name: "Georges-Louis",
-      profession: "Ambitieux",
-      photo: "https://dl.ouaisfi.eu/images/fbem/ambitieux.jpg",
-      originalUrl: "",
+      id: 3,
+      name: "Sofia",
+      profession: "Influenceuse",
+      photo: "https://images.unsplash.com/photo-1494790108755-2616b1e2c8f2?w=400&h=400&fit=crop&crop=face",
+      originalUrl: "https://unsplash.com/photo-1494790108755-2616b1e2c8f2",
       isDuckface: true,
-      bio: "Présidents"
+      bio: "Influenceuse mode et lifestyle ✨"
     },
     {
-      id: 6,
+      id: 4,
       name: "Thomas",
       profession: "Chef cuisinier",
       photo: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face",
@@ -64,16 +46,7 @@ const DuckFaceDetector = () => {
       bio: "Chef cuisinier passionné 👨‍🍳"
     },
     {
-      id: 7,
-      name: "Georges-Louis",
-      profession: "Attentif",
-      photo: "https://dl.ouaisfi.eu/images/fbem/attentif.jpg",
-      originalUrl: "",
-      isDuckface: true,
-      bio: "Présidents"
-    },
-    {
-      id: 8,
+      id: 5,
       name: "Léa",
       profession: "Blogueuse",
       photo: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&crop=face",
@@ -82,16 +55,7 @@ const DuckFaceDetector = () => {
       bio: "Photographe et blogueuse voyage 📷"
     },
     {
-      id: 9,
-      name: "Georges-Louis",
-      profession: "Conceptuel",
-      photo: "https://dl.ouaisfi.eu/images/fbem/conceptuel.jpg",
-      originalUrl: "",
-      isDuckface: true,
-      bio: "Présidents"
-    },
-    {
-      id: 10,
+      id: 6,
       name: "Alexandre",
       profession: "Architecte",
       photo: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop&crop=face",
@@ -100,16 +64,7 @@ const DuckFaceDetector = () => {
       bio: "Architecte et amateur de café ☕"
     },
     {
-      id: 11,
-      name: "Georges-Louis",
-      profession: "Généreux",
-      photo: "https://dl.ouaisfi.eu/images/fbem/deProfil.jpg",
-      originalUrl: "",
-      isDuckface: true,
-      bio: "Présidents"
-    },
-    {
-      id: 12,
+      id: 7,
       name: "Chloé",
       profession: "Designer graphique",
       photo: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=400&fit=crop&crop=face",
@@ -118,16 +73,7 @@ const DuckFaceDetector = () => {
       bio: "Étudiante en design graphique 🎨"
     },
     {
-      id: 13,
-      name: "Georges-Louis",
-      profession: "Très généreux",
-      photo: "https://dl.ouaisfi.eu/images/fbem/sympa.jpg",
-      originalUrl: "",
-      isDuckface: true,
-      bio: "Présidents"
-    },
-    {
-      id: 14,
+      id: 8,
       name: "Maxime",
       profession: "Personal trainer",
       photo: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop&crop=face",
@@ -136,16 +82,7 @@ const DuckFaceDetector = () => {
       bio: "Personal trainer et nutritionniste 💪"
     },
     {
-      id: 15,
-      name: "Georges-Louis",
-      profession: "Tellement généreux",
-      photo: "https://dl.ouaisfi.eu/images/fbem/généreux.jpg",
-      originalUrl: "",
-      isDuckface: true,
-      bio: "Présidents"
-    },
-    {
-      id: 16,
+      id: 9,
       name: "Camille",
       profession: "Prof de yoga",
       photo: "https://images.unsplash.com/photo-1607746882042-944635dfe10e?w=400&h=400&fit=crop&crop=face",
@@ -154,16 +91,7 @@ const DuckFaceDetector = () => {
       bio: "Danseuse et prof de yoga 🧘‍♀️"
     },
     {
-      id: 17,
-      name: "Georges-Louis",
-      profession: "Éloquent",
-      photo: "https://dl.ouaisfi.eu/images/fbem/éloquent.jpg",
-      originalUrl: "",
-      isDuckface: true,
-      bio: "Présidents"
-    },
-    {
-      id: 18,
+      id: 10,
       name: "Hugo",
       profession: "Musicien",
       photo: "https://images.unsplash.com/photo-1556474835-b0f3ac40d4d1?w=400&h=400&fit=crop&crop=face",
@@ -172,16 +100,7 @@ const DuckFaceDetector = () => {
       bio: "Musicien indie et barista ☕🎸"
     },
     {
-      id: 19,
-      name: "Georges-Louis",
-      profession: "Bon camarade",
-      photo: "https://dl.ouaisfi.eu/images/fbem/bon-camarade.jpg",
-      originalUrl: "",
-      isDuckface: true,
-      bio: "Présidents"
-    },
-    {
-      id: 20,
+      id: 11,
       name: "Manon",
       profession: "Marketing digital",
       photo: "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=400&h=400&fit=crop&crop=face",
@@ -190,16 +109,7 @@ const DuckFaceDetector = () => {
       bio: "Étudiante en marketing digital 📱"
     },
     {
-      id: 21,
-      name: "Georges-Louis",
-      profession: "Ferme",
-      photo: "https://dl.ouaisfi.eu/images/fbem/ferme.jpg",
-      originalUrl: "",
-      isDuckface: true,
-      bio: "Présidents"
-    },
-    {
-      id: 22,
+      id: 12,
       name: "Antoine",
       profession: "Journaliste sportif",
       photo: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=400&fit=crop&crop=face",
@@ -208,16 +118,7 @@ const DuckFaceDetector = () => {
       bio: "Journaliste sportif et cycliste 🚴‍♂️"
     },
     {
-      id: 23,
-      name: "Georges-Louis",
-      profession: "Sensible (effaré)",
-      photo: "https://dl.ouaisfi.eu/images/fbem/effaré.jpg",
-      originalUrl: "",
-      isDuckface: true,
-      bio: "Présidents"
-    },
-    {
-      id: 24,
+      id: 13,
       name: "Jade",
       profession: "Artiste peintre",
       photo: "https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?w=400&h=400&fit=crop&crop=face",
@@ -226,16 +127,7 @@ const DuckFaceDetector = () => {
       bio: "Artiste peintre et amoureuse de la nature 🎨"
     },
     {
-      id: 23,
-      name: "Georges-Louis",
-      profession: "Malicieux",
-      photo: "https://dl.ouaisfi.eu/images/fbem/malicieux.jpg",
-      originalUrl: "",
-      isDuckface: true,
-      bio: "Présidents"
-    },   
-    {
-      id: 25,
+      id: 14,
       name: "Julien",
       profession: "Vétérinaire",
       photo: "https://images.unsplash.com/photo-1463453091185-61582044d556?w=400&h=400&fit=crop&crop=face",
@@ -244,16 +136,7 @@ const DuckFaceDetector = () => {
       bio: "Vétérinaire et amoureux des animaux 🐕"
     },
     {
-      id: 27,
-      name: "Georges-Louis",
-      profession: "Volontaire ",
-      photo: "https://dl.ouaisfi.eu/images/fbem/patriote.jpg",
-      originalUrl: "",
-      isDuckface: true,
-      bio: "Présidents"
-    },
-    {
-      id: 28,
+      id: 15,
       name: "Océane",
       profession: "Coach développement personnel",
       photo: "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=400&h=400&fit=crop&crop=face",
@@ -262,16 +145,7 @@ const DuckFaceDetector = () => {
       bio: "Surfeuse et coach en développement personnel 🏄‍♀️"
     },
     {
-      id: 29,
-      name: "Georges-Louis",
-      profession: "Pas poète, ingénieux",
-      photo: "https://dl.ouaisfi.eu/images/fbem/rimbaldien.jpg",
-      originalUrl: "",
-      isDuckface: true,
-      bio: "Présidents"
-    },
-    {
-      id: 30,
+      id: 16,
       name: "Bastien",
       profession: "Ingénieur",
       photo: "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=400&h=400&fit=crop&crop=face",
@@ -280,16 +154,7 @@ const DuckFaceDetector = () => {
       bio: "Ingénieur et passionné de randonnée 🥾"
     },
     {
-      id: 31,
-      name: "Georges-Louis",
-      profession: "Stratège",
-      photo: "https://dl.ouaisfi.eu/images/fbem/stratège.jpg",
-      originalUrl: "",
-      isDuckface: true,
-      bio: "Présidents"
-    },
-    {
-      id: 32,
+      id: 17,
       name: "Luna",
       profession: "Étudiante en psychologie",
       photo: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=400&h=400&fit=crop&crop=face",
@@ -298,16 +163,7 @@ const DuckFaceDetector = () => {
       bio: "Étudiante en psychologie et blogueuse 📚"
     },
     {
-      id: 33,
-      name: "Georges-Louis",
-      profession: "Attentionné",
-      photo: "https://dl.ouaisfi.eu/images/fbem/grippé.jpg",
-      originalUrl: "",
-      isDuckface: true,
-      bio: "Présidents"
-    },
-    {
-      id: 34,
+      id: 18,
       name: "Romain",
       profession: "Photographe de mariage",
       photo: "https://images.unsplash.com/photo-1507591064344-4c6ce005b128?w=400&h=400&fit=crop&crop=face",
@@ -316,16 +172,7 @@ const DuckFaceDetector = () => {
       bio: "Photographe de mariage et papa poule 👶"
     },
     {
-      id: 34,
-      name: "Georges-Louis",
-      profession: "Visionnaire",
-      photo: "https://dl.ouaisfi.eu/images/fbem/visionnaire.jpg",
-      originalUrl: "",
-      isDuckface: true,
-      bio: "Présidents"
-    },
-    {
-      id: 35,
+      id: 19,
       name: "Anaïs",
       profession: "Styliste",
       photo: "https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=400&h=400&fit=crop&crop=face",
@@ -334,16 +181,7 @@ const DuckFaceDetector = () => {
       bio: "Styliste et accro aux vintage 👗"
     },
     {
-      id: 36,
-      name: "Georges-Louis",
-      profession: "Mentaliste",
-      photo: "https://dl.ouaisfi.eu/images/fbem/mentaliste.jpg",
-      originalUrl: "",
-      isDuckface: true,
-      bio: "Présidents"
-    },
-    {
-      id: 37,
+      id: 20,
       name: "Kevin",
       profession: "Game designer",
       photo: "https://images.unsplash.com/photo-1504593811423-6dd665756598?w=400&h=400&fit=crop&crop=face",
@@ -352,16 +190,7 @@ const DuckFaceDetector = () => {
       bio: "Game designer et amateur de comics 🦸‍♂️"
     },
     {
-      id: 38,
-      name: "Georges-Louis",
-      profession: "Chef d'orchestre",
-      photo: "https://dl.ouaisfi.eu/images/fbem/deProfil.jpg",
-      originalUrl: "",
-      isDuckface: true,
-      bio: "Présidents"
-    },
-    {
-      id: 39,
+      id: 21,
       name: "Inès",
       profession: "Infirmière",
       photo: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=400&h=400&fit=crop&crop=face",
@@ -370,16 +199,7 @@ const DuckFaceDetector = () => {
       bio: "Infirmière et bénévole associative ❤️"
     },
     {
-      id: 40,
-      name: "Georges-Louis",
-      profession: "Ufologue à succès",
-      photo: "https://dl.ouaisfi.eu/images/fbem/ufologue.jpg",
-      originalUrl: "",
-      isDuckface: true,
-      bio: "Présidents"
-    },
-    {
-      id: 41,
+      id: 22,
       name: "Dylan",
       profession: "DJ",
       photo: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=400&h=400&fit=crop&crop=face",
@@ -388,16 +208,7 @@ const DuckFaceDetector = () => {
       bio: "DJ et producteur de musique électro 🎧"
     },
     {
-      id: 42,
-      name: "Georges-Louis",
-      profession: "Prudent",
-      photo: "https://dl.ouaisfi.eu/images/fbem/prudent.jpg",
-      originalUrl: "",
-      isDuckface: true,
-      bio: "Présidents"
-    },
-    {
-      id: 43,
+      id: 23,
       name: "Sarah",
       profession: "Avocate",
       photo: "https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?w=400&h=400&fit=crop&crop=face",
@@ -406,16 +217,7 @@ const DuckFaceDetector = () => {
       bio: "Avocate et amatrice de théâtre 🎭"
     },
     {
-      id: 44,
-      name: "Georges-Louis",
-      profession: "",
-      photo: "https://dl.ouaisfi.eu/images/fbem/.jpg",
-      originalUrl: "",
-      isDuckface: true,
-      bio: "Présidents"
-    },
-    {
-      id: 45,
+      id: 24,
       name: "Adrien",
       profession: "Professeur d'histoire",
       photo: "https://images.unsplash.com/photo-1506277886164-e25aa3f4ef7f?w=400&h=400&fit=crop&crop=face",
@@ -424,16 +226,7 @@ const DuckFaceDetector = () => {
       bio: "Professeur d'histoire et collectionneur 📖"
     },
     {
-      id: 46,
-      name: "Georges-Louis",
-      profession: "",
-      photo: "https://dl.ouaisfi.eu/images/fbem/.jpg",
-      originalUrl: "",
-      isDuckface: true,
-      bio: "Présidents"
-    },
-    {
-      id: 47,
+      id: 25,
       name: "Margot",
       profession: "Architecture d'intérieur",
       photo: "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=400&h=400&fit=crop&crop=face",
@@ -442,16 +235,16 @@ const DuckFaceDetector = () => {
       bio: "Étudiante en architecture d'intérieur 🏠"
     },
     {
-      id: 48,
-      name: "Georges-Louis",
-      profession: "",
-      photo: "https://dl.ouaisfi.eu/images/fbem/.jpg",
-      originalUrl: "",
-      isDuckface: true,
-      bio: "Présidents"
+      id: 26,
+      name: "Florian",
+      profession: "Start-upper",
+      photo: "https://images.unsplash.com/photo-1507919909716-c8262e491cde?w=400&h=400&fit=crop&crop=face",
+      originalUrl: "https://unsplash.com/photo-1507919909716-c8262e491cde",
+      isDuckface: false,
+      bio: "Start-upper et amateur de paddle 🏄‍♂️"
     },
     {
-      id: 49,
+      id: 27,
       name: "Lisa",
       profession: "Dentiste",
       photo: "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=400&h=400&fit=crop&crop=face",
@@ -460,16 +253,7 @@ const DuckFaceDetector = () => {
       bio: "Dentiste et passionnée de salsa 💃"
     },
     {
-      id: 50,
-      name: "Georges-Louis",
-      profession: "",
-      photo: "https://dl.ouaisfi.eu/images/fbem/.jpg",
-      originalUrl: "",
-      isDuckface: true,
-      bio: "Présidents"
-    },
-    {
-      id: 51,
+      id: 28,
       name: "Mathieu",
       profession: "Pompier",
       photo: "https://images.unsplash.com/photo-1542909168-82c3e7fdca5c?w=400&h=400&fit=crop&crop=face",
@@ -478,16 +262,7 @@ const DuckFaceDetector = () => {
       bio: "Pompier et coach sportif 🚒"
     },
     {
-      id: 52,
-      name: "Georges-Louis",
-      profession: "",
-      photo: "https://dl.ouaisfi.eu/images/fbem/.jpg",
-      originalUrl: "",
-      isDuckface: true,
-      bio: "Présidents"
-    },
-    {
-      id: 53,
+      id: 29,
       name: "Clémence",
       profession: "Étudiante en médecine",
       photo: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=400&h=400&fit=crop&crop=face",
@@ -496,16 +271,25 @@ const DuckFaceDetector = () => {
       bio: "Étudiante en médecine et violoniste 🎻"
     },
     {
-      id: 54,
-      name: "Georges-Louis",
-      profession: "",
-      photo: "https://dl.ouaisfi.eu/images/fbem/.jpg",
-      originalUrl: "",
-      isDuckface: true,
-      bio: "Présidents"
+      id: 30,
+      name: "Gabriel",
+      profession: "Consultant IT",
+      photo: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
+      originalUrl: "https://unsplash.com/photo-1507003211169-0a1dd7228f2d",
+      isDuckface: false,
+      bio: "Consultant IT et amateur de escape games 🔐"
     },
     {
-      id: 55,
+      id: 31,
+      name: "Amélie",
+      profession: "Journaliste culinaire",
+      photo: "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=400&h=400&fit=crop&crop=face",
+      originalUrl: "https://unsplash.com/photo-1559526324-4b87b5e36e44",
+      isDuckface: true,
+      bio: "Journaliste culinaire et gourmande 🍰"
+    },
+    {
+      id: 32,
       name: "Valentin",
       profession: "Kinésithérapeute",
       photo: "https://images.unsplash.com/photo-1474176857210-7287d38d27c6?w=400&h=400&fit=crop&crop=face",
@@ -514,16 +298,7 @@ const DuckFaceDetector = () => {
       bio: "Kinésithérapeute et grimpeur 🧗‍♂️"
     },
     {
-      id: 56,
-      name: "Georges-Louis",
-      profession: "",
-      photo: "https://dl.ouaisfi.eu/images/fbem/.jpg",
-      originalUrl: "",
-      isDuckface: true,
-      bio: "Présidents"
-    },
-    {
-      id: 57,
+      id: 33,
       name: "Fiona",
       profession: "Community manager",
       photo: "https://images.unsplash.com/photo-1521146764736-56c929d59c83?w=400&h=400&fit=crop&crop=face",
@@ -532,16 +307,7 @@ const DuckFaceDetector = () => {
       bio: "Community manager et amatrice de K-pop 🎤"
     },
     {
-      id: 58,
-      name: "Georges-Louis",
-      profession: "",
-      photo: "https://dl.ouaisfi.eu/images/fbem/.jpg",
-      originalUrl: "",
-      isDuckface: true,
-      bio: "Présidents"
-    },
-    {
-      id: 59,
+      id: 34,
       name: "Étienne",
       profession: "Comptable",
       photo: "https://images.unsplash.com/photo-1558222218-b7b54eede3f3?w=400&h=400&fit=crop&crop=face",
@@ -550,16 +316,7 @@ const DuckFaceDetector = () => {
       bio: "Comptable et passionné d'astronomie 🔭"
     },
     {
-      id: 60,
-      name: "Georges-Louis",
-      profession: "",
-      photo: "https://dl.ouaisfi.eu/images/fbem/.jpg",
-      originalUrl: "",
-      isDuckface: true,
-      bio: "Présidents"
-    },
-    {
-      id: 61,
+      id: 35,
       name: "Zara",
       profession: "Designer UX/UI",
       photo: "https://images.unsplash.com/photo-1506863530036-1efeddceb993?w=400&h=400&fit=crop&crop=face",
@@ -568,16 +325,7 @@ const DuckFaceDetector = () => {
       bio: "Designer UX/UI et yoga addict 🧘‍♀️"
     },
     {
-      id: 62,
-      name: "Georges-Louis",
-      profession: "",
-      photo: "https://dl.ouaisfi.eu/images/fbem/.jpg",
-      originalUrl: "",
-      isDuckface: true,
-      bio: "Présidents"
-    },
-    {
-      id: 63,
+      id: 36,
       name: "Nicolas",
       profession: "Électricien",
       photo: "https://images.unsplash.com/photo-1522556189639-b150ed9c4330?w=400&h=400&fit=crop&crop=face",
@@ -586,16 +334,7 @@ const DuckFaceDetector = () => {
       bio: "Électricien et bassiste du dimanche 🎸"
     },
     {
-      id: 64,
-      name: "Georges-Louis",
-      profession: "",
-      photo: "https://dl.ouaisfi.eu/images/fbem/.jpg",
-      originalUrl: "",
-      isDuckface: true,
-      bio: "Présidents"
-    },
-    {
-      id: 65,
+      id: 37,
       name: "Elise",
       profession: "Sage-femme",
       photo: "https://images.unsplash.com/photo-1509967419530-da38b4704bc6?w=400&h=400&fit=crop&crop=face",
@@ -604,7 +343,7 @@ const DuckFaceDetector = () => {
       bio: "Sage-femme et amoureuse des chats 🐱"
     },
     {
-      id: 66,
+      id: 38,
       name: "Raphaël",
       profession: "Menuisier",
       photo: "https://images.unsplash.com/photo-1531384441138-2736e62e0919?w=400&h=400&fit=crop&crop=face",
@@ -613,7 +352,7 @@ const DuckFaceDetector = () => {
       bio: "Menuisier et bricoleur du dimanche 🔨"
     },
     {
-      id: 67,
+      id: 39,
       name: "Céleste",
       profession: "Étudiante en communication",
       photo: "https://images.unsplash.com/photo-1493863641943-9b68992a8d07?w=400&h=400&fit=crop&crop=face",
@@ -622,7 +361,7 @@ const DuckFaceDetector = () => {
       bio: "Étudiante en communication et TikTokeuse 📱"
     },
     {
-      id: 68,
+      id: 40,
       name: "Simon",
       profession: "Pilote de ligne",
       photo: "https://images.unsplash.com/photo-1552058544-f2b08422138a?w=400&h=400&fit=crop&crop=face",
@@ -631,7 +370,7 @@ const DuckFaceDetector = () => {
       bio: "Pilote de ligne et photographe amateur ✈️"
     },
     {
-      id: 69,
+      id: 41,
       name: "Salomé",
       profession: "Traductrice",
       photo: "https://images.unsplash.com/photo-1573140247632-f8fd74997d5c?w=400&h=400&fit=crop&crop=face",
@@ -640,13 +379,13 @@ const DuckFaceDetector = () => {
       bio: "Traductrice et polyglotte passionnée 🌍"
     },
     {
-      id: 70,
-      name: "",
-      profession: "",
-      photo: "",
-      originalUrl: "",
-      isDuckface: true,
-      bio: ""
+      id: 42,
+      name: "Axel",
+      profession: "Sommelier",
+      photo: "https://images.unsplash.com/photo-1566492031773-4f4e44671d66?w=400&h=400&fit=crop&crop=face",
+      originalUrl: "https://unsplash.com/photo-1566492031773-4f4e44671d66",
+      isDuckface: false,
+      bio: "Sommelier et amateur de bons vins 🍷"
     }
   ];
 
@@ -682,26 +421,47 @@ const DuckFaceDetector = () => {
 
   if (currentIndex >= profiles.length) {
     return (
-      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
-        <div className="bg-white rounded-2xl p-8 shadow-lg max-w-md w-full mx-4">
+      <div className="min-h-screen bg-gradient-to-br from-blue-50 to-blue-100 flex items-center justify-center">
+        <div className="bg-white rounded-2xl p-8 shadow-xl max-w-md w-full mx-4 transform animate-pulse">
           <div className="text-center">
-            <div className="text-6xl mb-4">🎉</div>
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">Jeu terminé !</h2>
-            <div className="text-4xl font-bold text-blue-600 mb-2">{getScore()}%</div>
-            <p className="text-gray-600 mb-6">
-              Vous avez correctement identifié {swipedProfiles.filter(p => p.correct).length} duckfaces sur {swipedProfiles.length}
+            <div className="text-6xl mb-4 animate-bounce">🎉</div>
+            <h2 className="text-3xl font-bold text-gray-800 mb-2">Félicitations !</h2>
+            <h3 className="text-xl text-blue-600 mb-4">Jeu terminé sur Duckfacebook</h3>
+            <div className="text-5xl font-bold text-blue-600 mb-2">{getScore()}%</div>
+            <p className="text-lg text-gray-600 mb-2">
+              <strong>{swipedProfiles.filter(p => p.correct).length}</strong> bonnes réponses
             </p>
+            <p className="text-sm text-gray-500 mb-6">
+              sur {swipedProfiles.length} profils swipés
+            </p>
+            
+            {/* Message selon le score */}
+            <div className="mb-6">
+              {getScore() === 100 && (
+                <p className="text-green-600 font-semibold">🏆 Score parfait ! Vous êtes un expert duckface !</p>
+              )}
+              {getScore() >= 80 && getScore() < 100 && (
+                <p className="text-blue-600 font-semibold">🌟 Excellent ! Vous maîtrisez l'art du duckface</p>
+              )}
+              {getScore() >= 60 && getScore() < 80 && (
+                <p className="text-yellow-600 font-semibold">👍 Pas mal ! Encore un peu d'entraînement</p>
+              )}
+              {getScore() < 60 && (
+                <p className="text-gray-600 font-semibold">🤔 Il faut s'entraîner pour reconnaître les duckfaces !</p>
+              )}
+            </div>
+
             <div className="flex gap-3">
               <button 
                 onClick={resetGame}
-                className="flex-1 bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors flex items-center justify-center gap-2"
+                className="flex-1 bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-all transform hover:scale-105 flex items-center justify-center gap-2"
               >
                 <RotateCcw size={20} />
                 Rejouer
               </button>
               <button 
                 onClick={() => setShowStats(true)}
-                className="flex-1 bg-gray-200 text-gray-800 px-6 py-3 rounded-lg font-semibold hover:bg-gray-300 transition-colors flex items-center justify-center gap-2"
+                className="flex-1 bg-gray-200 text-gray-800 px-6 py-3 rounded-lg font-semibold hover:bg-gray-300 transition-all transform hover:scale-105 flex items-center justify-center gap-2"
               >
                 <BarChart3 size={20} />
                 Détails
@@ -718,7 +478,7 @@ const DuckFaceDetector = () => {
       {/* Header */}
       <header className="bg-blue-600 text-white p-4 shadow-lg">
         <div className="max-w-md mx-auto flex items-center justify-between">
-          <h1 className="text-xl font-bold">DuckFace Detector</h1>
+          <h1 className="text-xl font-bold">Duckfacebook</h1>
           <div className="flex items-center gap-4">
             <div className="text-sm">
               {currentIndex + 1}/{profiles.length}
@@ -762,7 +522,7 @@ const DuckFaceDetector = () => {
             {/* Question */}
             <div className="p-6">
               <h3 className="text-lg font-semibold text-gray-800 text-center mb-6">
-                Facebook EN MIEUX <br/> Duckfacebook 🦆
+                Cette personne fait-elle une duckface ? 🦆
               </h3>
 
               {/* Boutons de swipe */}
@@ -808,7 +568,7 @@ const DuckFaceDetector = () => {
                 rel="noopener noreferrer"
                 className="text-xs text-gray-500 hover:text-blue-600 underline block mb-4"
               >
-                📷 Voir la photo originale
+                📷 Voir la photo originale sur Unsplash
               </a>
               <button 
                 onClick={() => setShowProfile(false)}
