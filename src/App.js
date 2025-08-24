@@ -762,7 +762,7 @@ const DuckFaceDetector = () => {
             {/* Question */}
             <div className="p-6">
               <h3 className="text-lg font-semibold text-gray-800 text-center mb-6">
-                Duckfacebook 🦆
+                Facebook EN MIEUX <br/> Duckfacebook 🦆
               </h3>
 
               {/* Boutons de swipe */}
